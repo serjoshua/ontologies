@@ -1,0 +1,17 @@
+spring:
+  data:
+    mongodb:
+      database: test
+      host: localhost
+      port: 27017
+
+logging:
+  level:
+    root: info
+    org:
+      springframework:
+        data: info
+        web: debug
+    com:
+      spring:
+        ontologies: debug

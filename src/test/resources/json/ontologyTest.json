@@ -1,0 +1,13 @@
+{
+  "ontologyId": "ot1",
+  "title": "Ontology Sample 1",
+  "description": "This is a sample ontology",
+  "definitionProperties": [
+    "http://www.ebi.ac.uk/efo/definition",
+    "http://purl.obolibrary.org/obo/IAO_0000115"
+  ],
+  "synonymProperties": [
+    "http://www.ebi.ac.uk/efo/alternative_term",
+    "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"
+  ]
+}
