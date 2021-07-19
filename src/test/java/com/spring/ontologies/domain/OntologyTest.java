@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 import org.json.JSONException;
 import org.junit.Before;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.skyscreamer.jsonassert.JSONAssert;
@@ -58,12 +57,5 @@ public class OntologyTest {
         String serializedData = mapper.writeValueAsString(ontology);
 
         JSONAssert.assertEquals(ontologyJson, serializedData, true);
-    }
-
-    @Test
-    public void deserialize() throws JsonProcessingException {
-        Ontology ontology = mapper.readValue(ontologyJson, Ontology.class);
-
-        Assertions.assertNull(ontology); // TODO
     }
 }
